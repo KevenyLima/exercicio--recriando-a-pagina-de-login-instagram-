@@ -17,7 +17,4 @@ function start(){
  },time)
 
 }
-setInterval()
 window.addEventListener("load",start)
-
-window.addEventListener("")
