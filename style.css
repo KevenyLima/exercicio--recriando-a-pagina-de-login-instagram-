@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'amanah';
+    src: url('Amanah\ Script\ \(DEMO\ VERSION\).ttf')format('truetype');
+}
+@font-face {
+    font-family: 'risalah';
+    src: url('Risalah\ Cinta.otf')format('opentype');
+}
+body{
+    background-color: #dbdbdb;
+
+}
+main{
+    display:flex;
+    justify-content: center;
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+.container{
+    display:  grid;
+    grid-template-columns: 152px  246px
+    56px;
+    grid-template-rows:  100px 433px
+    85px;
+}
+.tela{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:2 ;
+    grid-row-end: 3 ;
+    opacity: 0;
+    transition: opacity 800ms;
+}
+.selected{
+    opacity:1;
+}
+#imagem{
+    display: inline-block;
+    margin-right: 15px;
+}
+#formulario{
+
+    width: 350px;
+    height: 606px;
+    margin-top: 12px;
+}
+footer{
+    text-align: center;
+    margin-bottom: 52px;
+    
+}
+footer > a{
+    margin-right: 10px;
+    text-decoration: none;
+    text-decoration-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: gray;
+}
+.mark{
+    width: 136px;
+    height: 40px;
+    border-radius: 5px;
+}
+#icon{
+    width: 16px;
+    height: 16px;
+}
+.formulario{
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(134, 134, 134, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom:10px;
+    
+}
+div{
+    text-align: center;
+}
+#cadastrese{
+    color: #0095F6;
+    font-weight: bold;
+    text-decoration: none;
+}
+#entrarFacebook{
+    color: #385185;
+    font-weight: bold;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+input{
+    display: inline-block;
+    width: 250px;
+    height: 20px;
+    margin: 10px;
+    padding: 9px 0px 7px 8px;
+    text-align: start;
+    text-justify:center ;
+    border-width: 1px;
+    border-color:rgba(128, 128, 128, 0.300);
+    background-color: #FAFAFA;
+    
+}
+#entrar{
+    width: 260px;
+    height: 40px;
+    text-align: center;
+    background-color: #B2DFFC;
+    color: white;
+    border-radius: 3px;
+    border-width: 0px;
+}
+h1{
+    font-family: risalah, cursive;
+    font-weight: bold;
+}
+#titulo{
+    padding-top: 10px;
+}
+#ou{
+    color: gray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+#ou::before{
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    background:#DBDBDB;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+#ou::after{
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    background:#DBDBDB;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+@media(max-width:760px){
+    #imagem{
+        display:none;
+    }
+}
